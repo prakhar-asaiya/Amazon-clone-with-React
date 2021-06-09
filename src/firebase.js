@@ -3,6 +3,7 @@ import firebase from "firebase";
 const firebaseConfig = {
   apiKey: "AIzaSyAw-3whl9aF1qr1rSyk5CjqhlAngQCPqWM",
   authDomain: "clone-with-react-28928.firebaseapp.com",
+  databaseURL: "https://clone-with-react-28928-default-rtdb.firebaseio.com",
   projectId: "clone-with-react-28928",
   storageBucket: "clone-with-react-28928.appspot.com",
   messagingSenderId: "1056186902872",
