@@ -11,11 +11,21 @@
     margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   }
-  .home__slides{
+  .home__slideshow {
     width: 100%;
     z-index: -1;
     margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+  .home__slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }  
+  .home__slide {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
   }
   fade {
     -webkit-animation-name: fade;

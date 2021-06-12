@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
+import "./App.css";
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Login from "./components/login/Login";
 import Checkout from "./components/checkout/Checkout";
+import Payment from "./components/payment/Payment"
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 
@@ -34,23 +35,27 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
         <Switch>
-        <Route path="/login">
-            <Login/>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header/>
+            <Payment/>
           </Route>
           <Route path="/">
             <Header />
             <Home />
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
